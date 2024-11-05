@@ -1,0 +1,36 @@
+<!-- history.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico de Consumo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Cadastro de Consumo</a></li>
+    <li><a href="history.html">Histórico de Consumo</a></li>
+    <li><a href="alert.html">Alertas de Consumo</a></li>
+  </ul>
+</nav>
+<hr>
+
+  <h2>Histórico de Consumo de Água</h2>
+  <form id="historyForm">
+    <label for="userId">ID do Usuário:</label>
+    <input type="text" id="userId" required>
+    
+    <label for="startDate">Data Inicial:</label>
+    <input type="date" id="startDate" required>
+    
+    <label for="endDate">Data Final:</label>
+    <input type="date" id="endDate" required>
+    
+    <button type="submit">Buscar Histórico</button>
+  </form>
+  <ul id="historyList"></ul>
+  <script src="script.js"></script>
+</body>
+</html>

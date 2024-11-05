@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Consumo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="index.html">Cadastro de Consumo</a></li>
+    <li><a href="history.html">Histórico de Consumo</a></li>
+    <li><a href="alert.html">Alertas de Consumo</a></li>
+  </ul>
+</nav>
+<hr>
+
+    <h2>Cadastro de Consumo de Água</h2>
+  <form id="registerForm">
+    <label for="userId">ID do Usuário:</label>
+    <input type="text" id="userId" required>
+    
+    <label for="amount">Quantidade Consumida (m³):</label>
+    <input type="number" id="amount" required>
+    
+    <label for="date">Data do Consumo:</label>
+    <input type="date" id="date" required>
+    
+    <button type="submit">Registrar Consumo</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
